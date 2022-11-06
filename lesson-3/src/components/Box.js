@@ -2,6 +2,7 @@ import "./index.css";
 function Box() {
   const list1 = [
     {
+      ranking: "1",
       name: "Bí quyết thành công của người Do Thái",
       author: "Đắp Chăn Nằm Nghe Tun Kể",
       date: "16/10/2022",
@@ -10,6 +11,7 @@ function Box() {
         "https://photo-resize-zmp3.zmdcdn.me/w128_r1x1_webp/images/9/4/f/4/94f4c6672363ac433e1b3acaf2e55e82.jpg",
     },
     {
+      ranking: "2",
       name: "Cùng Đích Lép đi tìm 5 dấu hiệu lý tưởng mà một người bạn đời cần có",
       author: "Đắp Chăn Nằm Nghe Tun Kể",
       date: "16/10/2022",
@@ -18,6 +20,7 @@ function Box() {
         "https://photo-resize-zmp3.zmdcdn.me/w128_r1x1_webp/images/9/4/f/4/94f4c6672363ac433e1b3acaf2e55e82.jpg",
     },
     {
+      ranking: "3",
       name: "Đi Xuyên Qua Nỗi Buồn- Tri kỷ cảm xúc",
       author: "Tri kỷ cảm xúc",
       date: "31/10/2022",
@@ -28,6 +31,7 @@ function Box() {
   ];
   const list2 = [
     {
+      ranking: "1",
       name: "88.Có Đi Với Nhau Bao Lâu Đâu",
       author: "HIEU.TV",
       date: "16/10/2022",
@@ -36,6 +40,7 @@ function Box() {
         "https://photo-resize-zmp3.zmdcdn.me/w128_r1x1_webp/images/1/4/d/6/14d60761ebd1a3427db24956042d217c.jpg",
     },
     {
+      ranking: "2",
       name: "87. Sướng Trước Khổ Sau hay Khổ Trước Sướng Sau",
       author: "HIEU.TV",
       date: "16/10/2022",
@@ -44,6 +49,7 @@ function Box() {
         "https://photo-resize-zmp3.zmdcdn.me/w128_r1x1_webp/images/1/4/d/6/14d60761ebd1a3427db24956042d217c.jpg",
     },
     {
+      ranking: "3",
       name: "Cuối đoạn đường",
       author: "Nắng Thủy Tinh",
       date: "16/10/2022",
@@ -59,14 +65,19 @@ function Box() {
           return (
             <div className="card">
               <div className="content-mini">
+                <div className="ranking">
+                  <p>{item.ranking}</p>
+                </div>
                 <img className="imgSong" alt="#" src={item.imgUrl}></img>
                 <div className="content-info">
                   <p className="song">{item.name}</p>
                   <span className="author">{item.author}</span>
                   <br />
-                  <span className="date">{item.date}</span>
-                  <br />
-                  <span className="time">{item.time}</span>
+                  <div className="time-subtitle">
+                    <span className="date">{item.date}</span>
+                    <br />
+                    <span className="time">{item.time}</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -78,14 +89,19 @@ function Box() {
           return (
             <div className="card">
               <div className="content-mini">
+                <div className="ranking">
+                  <p>{item2.ranking}</p>
+                </div>
                 <img className="imgSong" alt="#" src={item2.imgUrl}></img>
                 <div className="content-info">
                   <p className="song">{item2.name}</p>
                   <span className="author">{item2.author}</span>
                   <br />
-                  <span className="date">{item2.date}</span>
-                  <br />
-                  <span className="time">{item2.time}</span>
+                  <div className="time-subtitle">
+                    <span className="date">{item2.date}</span>
+                    <br />
+                    <span className="time">{item2.time}</span>
+                  </div>
                 </div>
               </div>
             </div>

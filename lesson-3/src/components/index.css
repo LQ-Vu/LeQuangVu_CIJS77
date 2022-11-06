@@ -21,13 +21,27 @@
 .card{
     padding: 12px;
 }
+.ranking{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    margin: auto 12px auto 0;
+}
 .content-mini{
     display: flex;
     flex-direction: row;
     cursor: pointer;
-    margin-right: 12px;
+    margin-right: 15px;
    
 }
 .content-info{
+    margin-left: 12px;
 
+}
+.time-subtitle{
+    display: flex;
+    flex-direction: row;
+}
+.date{
+    padding-right: 10px;
 }
