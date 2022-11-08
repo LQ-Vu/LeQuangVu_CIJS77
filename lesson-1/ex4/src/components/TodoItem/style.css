@@ -1,0 +1,15 @@
+body{
+    padding:90px;
+}
+.optionname{
+    font-size: 20px;
+    color:gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.check{
+    margin-right: 30px;
+}
+.option{
+    display: flex;
+    margin-bottom: 18px;
+}
