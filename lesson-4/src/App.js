@@ -1,18 +1,14 @@
 import './App.css';
-
+import TrafficLight from './component/TrafficLight/TracfficLight';
 function App() {
-  function clickNext(){
-
-  }
   return (
     <div className="App">
-    <button onClick={clickNext}>Next</button>
-    <div className="list-item">
-        <div className="item1"></div>
-        <div className="item2"></div>
-        <div className="item3"></div>
-    </div>
+    {/* <Light></Light>
+    <Light color={"red"} isOn={true}></Light>
+    <Light color={"green"} isOn={true}></Light>
+    <Light color={"yellow"} isOn={true}></Light> */}
 
+   <TrafficLight></TrafficLight>
     </div>
   );
 }
